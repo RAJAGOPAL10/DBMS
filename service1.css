@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*. HEADER BAR */
+h2{
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	padding-top: 15px;
+	padding-left: 75px;
+	padding-bottom: 15px;
+	
+}
+article {
+    float: right;
+    width: 79%;
+    background-color: green;
+    height: 690px; 
+}
+
+nav {
+    float: left;
+    width: 21%;
+    height: 680px;
+    background: #0f4275;
+}
+header{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.main_nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	padding-right: 100px;
+
+}
+
+.main_nav li{
+	display: inline-block;
+}
+
+.main_nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 15px;
+	
+}
+
+.main_nav li:hover a{
+	border: 2px solid white;
+}
+
+.logo img{
+	padding-top: 10px;
+	padding-left: 10px;
+	width:45px;
+	height:auto;
+	float:left;
+}
+
+
+/* NAV BAR*/
+
+
+._nav{
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+  padding-right: 100px;
+
+}
+
+._nav li{
+  display: inline-block;
+}
+
+._nav li a{
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 15px;
+  
+}
+
+._nav li:hover a{
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+
+
+/*	ARTICLE STYLING		*/
+
+h3 {
+	font-size: 20px;
+	text-align: left;
+	color: black;
+	padding-top: 15px;
+	padding-left: 75px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  padding-top: 10px;
+  margin-left: 75px;
+}
+.custom-select select {
+  display: inline-block; /*hide original SELECT element:*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

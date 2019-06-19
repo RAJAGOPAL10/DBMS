@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICE REQUEST</title>
+	<link rel="stylesheet" type="text/css" href="service.css">
+  <script type="text/javascript">
+    function display() {
+      alert(' Successfully Signed Out!!!');
+      window.location.href='login.html';
+      session_destroy();
+    }
+
+  </script>
+</head>
+<body>
+	<header style="width: auto; height: 80px; background-color: #202020;">
+		
+		<div class="row">
+			<div class="logo">
+				<img src="logo.png" >
+			</div>
+			
+			<ul class="main_nav">
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">CONTACT</a></li>
+				<li><a href="">FAQ</a></li>
+				
+			</ul>
+			
+		</div>
+		<div>
+			<h2>ActiveBuilding</h2>
+	</header>
+
+	<nav>
+    <div class="row1">
+      <ul class="_nav">
+        <li><a href="user.php">PROFILE</a></li>
+        <li><a href="#" onclick="display()">SIGN OUT</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+  <article style="background-color: grey; width: auto; height: 800px;">
+		<form action="service.php" method="POST">
+			<div>
+  				<h3>SERVICE ISSUE</h3>
+  				<hr style="margin-top: 10px; margin-left: 75px; margin-right: 30px; width: 40%;">
+  				<p style="margin-left: 75px; margin-top: 10px;">LOCATION</p>
+  					<div class="custom-select" style="width:300px; padding-top: 10px;">
+						<select name="location">
+   							<option value="">Select Location:</option>
+    						<option value="Dining Room">Dining Room</option>
+    						<option value="Entryway">Entryway</option>
+    						<option value="Bedroom">Bedroom</option>
+    						<option value="Hall">Hall</option>
+    						<option value="Kitchen">Kitchen</option>
+    						<option value="Bathroom">Bathroom</option>
+    						<option value="Balcony">Balcony</option>
+  						</select>
+					</div>
+				<div>
+					<p style="margin-left: 75px; margin-top: 10px;">PROBLEM CATEGORY</p>
+  					<div class="custom-select" style="width:300px; padding-top: 10px;">
+  						<select onchange="java_script_:show(this.options[this.selectedIndex].value)" name="category">
+    						<option value="">Select the problem category:</option>
+    						<option value="Doors and Locks">Doors and Locks</option>
+   							<option value="Electrical and Lighting">Electrical and Lighting</option>
+    						<option value="Flooring">Flooring</option>
+    						<option value="Plumbing and Bath">Plumbing and Bath</option>
+    						<option value="Preventative maintenance">Preventative maintenance</option>
+    						<option value="General">General</option>
+  						</select>
+					</div>
+        			<div id="hiddenDiv1" style="display:none">
+					<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+  						<div class="custom-select" style="width:300px; padding-top: 10px;">
+						<select name="issue1">
+   							<option value="">Select item:</option>
+    						<option value="Exterior Door">Exterior Door</option>
+    						<option value="Interior Door">Interior Door</option>
+    						<option value="Lock">Lock</option>
+    						<option value="Mail Door">Mail Door</option>
+    						<option value="Other">Other</option>
+  						</select>
+						</div>
+			 		</div>
+			 		<div id="hiddenDiv2" style="display:none">
+          			<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+            			<div class="custom-select" style="width:300px; padding-top: 10px;">
+            				<select name="issue2">
+                			<option value="">Select item:</option>
+                			<option value="Ceiling fan">Ceiling fan</option>
+                			<option value="Exterior Lighting">Exterior Lighting</option>
+                			<option value="Interior Lightingr">Interior Lightingr</option>
+                			<option value="Electrical Outlet">Electrical Outlet</option>
+                			<option value="Power">Power</option>
+                			<option value="Switch">Switch</option>
+                			<option value="Other">Other</option>
+              				</select>
+          				</div>
+       				</div>
+       				<div id="hiddenDiv3" style="display:none">
+          			<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+            			<div class="custom-select" style="width:300px; padding-top: 10px;">
+            			<select name="issue3">
+               			<option value="">Select item:</option>
+                		<option value="Ceramic tile">Ceramic tile</option>
+                		<option value="Marble/Stone">Marble/Stone</option>
+                		<option value="Wood">Wood</option>
+                		<option value="Carpet">Carpet</option>
+                		<option value="Other">Other</option>
+              			</select>
+          				</div>
+       				</div>
+       				<div id="hiddenDiv4" style="display:none">
+          			<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+            			<div class="custom-select" style="width:300px; padding-top: 10px;">
+            			<select name="issue4">
+                		<option value="">Select item:</option>
+                		<option value="Mirror">Mirror</option>
+                		<option value="Plumbing">Plumbing</option>
+                		<option value="Shower">Shower</option>
+                		<option value="Sink">Sink</option>
+                		<option value="Tile">Tile</option>
+                		<option value="Toilet">Toilet</option>
+                		<option value="Bathroom hardware">Bathroom hardware</option>
+              			</select>
+          				</div>
+       				</div>
+       				<div id="hiddenDiv5" style="display:none">
+          			<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+            			<div class="custom-select" style="width:300px; padding-top: 10px;">
+            			<select name="issue5">
+                		<option value="">Select item:</option>
+                		<option value="Exterior Lighting - Monthly">Exterior Lighting - Monthly</option>
+                		<option value="Fire Extinguisher - Monthly">Fire Extinguisher - Monthly</option>
+                		<option value="Stairs - Annunal">Stairs - Annunal</option>
+                		<option value="Motors/Pumps - Semi Annu">Motors/Pumps - Semi Annu</option>
+                		<option value="Drain flow - Semi Annu">Drain flow - Semi Annu</option>
+                		<option value="Balconies - Annual">Balconies - Annual</option>
+                		<option value="Unit Inspection - Quar">Unit Inspection - Quar</option>
+              			</select>
+          				</div>
+       				</div>
+       				<div id="hiddenDiv6" style="display:none">
+          			<p style="margin-left: 75px; margin-top: 10px;">What is the item causing issue?</p>
+            			<div class="custom-select" style="width:300px; padding-top: 10px;">
+            			<select name="issue6">
+                		<option value="">Select item:</option>
+                		<option value="Cabinet">Cabinet</option>
+                		<option value="Drawer">Drawer</option>
+                		<option value="Paint">Paint</option>
+                		<option value="Window">Window</option>
+                		<option value="Stair handrail">Stair handrail</option>
+                		<option value="Shelving">Shelving</option>
+                		<option value="Other">Other</option>
+              			</select>
+          				</div>
+       				</div>
+				</div>
+				<p style="margin-left: 75px; margin-top: 10px;"><b>Please provide more details, if needed</b></p>
+        <p style="margin-left: 75px; margin-top: 10px;">(Note : Character limit - 80)</p>
+				<textarea name="message" rows="10" cols="40" style="margin-left: 75px; margin-top: 10px; padding: 10px;">optional</textarea>
+        <p style="margin-left: 75px; margin-top: 10px;">Date : (yyyy/mm/dd) </p>
+            <input type="Date" name="date" style="margin-left: 75px; ">
+				
+			</div>
+			<div>
+				<h3>TENANT DETAILS</h3>
+  				<hr style="margin-top: 10px; margin-left: 75px; margin-right: 30px; width: 40%;">
+  				<div>
+  					<p style="margin-left: 75px; margin-top: 10px;">Name : </p>
+  					<input type="text" name="name" style="margin-left: 75px;text-align: left;">
+
+  					<p style="margin-left: 75px; margin-top: 10px;">Apartment id : </p>
+  					<input type="text" name="a_id" style="margin-left: 75px;">
+
+  					<p style="margin-left: 75px; margin-top: 10px;">Phone : </p>
+  					<input type="text" name="phone" style="margin-left: 75px;">
+
+  					<p style="margin-left: 75px; margin-top: 10px;">Email : </p>
+  					<input type="Email" name="email" style="margin-left: 75px;">
+  				</div>
+  				
+  				
+			</div>
+			<input type="submit" value="Submit Service Request" style="margin-left: 75px;margin-top: 15px; font-size:20px;">
+		</form>
+	</article>
+
+	<script>
+		function show(aval) {
+        if (aval == "Doors and Locks") {
+          hiddenDiv1.style.display='block';
+          hiddenDiv2.style.display='none';
+          hiddenDiv3.style.display='none';
+          hiddenDiv4.style.display='none';
+          hiddenDiv5.style.display='none';
+          hiddenDiv6.style.display='none';
+          Form.fileURL.focus();
+        } 
+        if (aval == "Electrical and Lighting"){
+          hiddenDiv1.style.display='none';
+          hiddenDiv2.style.display='block';
+          hiddenDiv3.style.display='none';
+          hiddenDiv4.style.display='none';
+          hiddenDiv5.style.display='none';
+          hiddenDiv6.style.display='none';
+          Form.fileURL.focus();
+        }
+        if (aval == "Flooring"){
+          hiddenDiv1.style.display='none';
+          hiddenDiv3.style.display='block';
+          hiddenDiv2.style.display='none';
+          hiddenDiv4.style.display='none';
+          hiddenDiv5.style.display='none';
+          hiddenDiv6.style.display='none';
+          Form.fileURL.focus();
+        }
+        if (aval == "Plumbing and Bath"){
+          hiddenDiv1.style.display='none';
+          hiddenDiv4.style.display='block';
+          hiddenDiv3.style.display='none';
+          hiddenDiv2.style.display='none';
+          hiddenDiv5.style.display='none';
+          hiddenDiv6.style.display='none';
+          Form.fileURL.focus();
+        }
+        if (aval == "Preventative maintenance"){
+          hiddenDiv1.style.display='none';
+          hiddenDiv5.style.display='block';
+          hiddenDiv3.style.display='none';
+          hiddenDiv4.style.display='none';
+          hiddenDiv2.style.display='none';
+          hiddenDiv6.style.display='none';
+          Form.fileURL.focus();
+        }
+        else{
+          hiddenDiv1.style.display='none';
+          hiddenDiv6.style.display='block';
+          hiddenDiv3.style.display='none';
+          hiddenDiv4.style.display='none';
+          hiddenDiv5.style.display='none';
+          hiddenDiv2.style.display='none';
+          Form.fileURL.focus();
+        }
+      }
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP</title>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	padding-top: 15px;
+	padding-left: 75px;
+	padding-bottom: 15px;
+	
+}
+header{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-color: #191919;
+}
+
+.main_nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	padding-right: 100px;
+
+}
+
+.main_nav li{
+	display: inline-block;
+}
+
+.main_nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 15px;
+	
+}
+
+.main_nav li:hover a{
+	border: 2px solid white;
+}
+
+.logo img{
+	padding-top: 10px;
+	padding-left: 10px;
+	width:45px;
+	height:auto;
+	float:left;
+}
+
+
+
+.signup_box{
+	width: 420px;
+	height: auto;
+	background: #000;
+	color: #fff;
+	top: 55%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 40px 25px ;
+	border-radius: 20px;
+}
+.avatar{
+	width: 100px;
+	height:100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+.signup_box td{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.signup_box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signup_box input[type="text"],input[type="email"],input[type="phone"],input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+}
+.signup_box input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.signup_box input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: black;
+}
+
+.signup_box a{
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.signup_box a:hover{
+	color: #ffc107;
+}
+	</style>
+</head>
+<body style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(sign.png);">
+	<header style="width: auto; height: 80px;">
+		
+		<div class="row">
+			<div class="logo">
+				<img src="logo.png" >
+				</div>
+			
+			<ul class="main_nav">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="admin_login.html">ADMIN</a></li>
+				<li><a href="">CONTACT</a></li>
+				<li><a href="">FAQ</a></li>
+				
+			</ul>
+			
+		</div>
+		<div>
+			<h2>ActiveBuilding</h2>
+		</div>
+		<div class="signup_box">
+			<img src="signin.png" class="avatar">
+			<br>
+			<h1 style="padding-left: 120px;">Enter Details</h1>
+			<br>
+			<form action="signup2.php" method="POST">
+				<table>
+  				<tr>
+					<td> Email ID</td>
+					<td>
+					<input type="email" name="email" placeholder="Enter Email" style="margin-top: 20px; margin-left: 0px;">
+					</td>
+  				</tr>	
+  				<tr>
+					<td>Phone Number</td>
+						<td>
+						<input type="Phone" name="ph_no" placeholder="Enter ph no" style=" margin-left: 0px;">
+						</td>
+				</tr>
+				<tr>
+						<td>Password</td>
+						<td>
+						<input type="password" name="password" placeholder="Enter password" style=" margin-left: 0px;">
+						</td>
+				</tr>
+				<tr>
+						<td>Confirm Password</td>
+						<td>
+						<input type="password" name="c_password" placeholder="Re-enter password" style=" margin-left: 0px;">
+						</td>
+				</tr>
+				<tr>
+						<td>
+						<input type="submit" name="" value="Submit" style="margin-left: 100px; ">
+						</td>
+					</tr>
+				</table>
+		</form>
+	</div>
+
+	</header>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	padding-top: 15px;
+	padding-left: 75px;
+	padding-bottom: 15px;
+	
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ap.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.main_nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	padding-right: 100px;
+
+}
+
+.main_nav li{
+	display: inline-block;
+}
+
+.main_nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 15px;
+	
+}
+
+.main_nav li:hover a{
+	border: 2px solid white;
+}
+
+.logo img{
+	padding-top: 10px;
+	padding-left: 10px;
+	width:45px;
+	height:auto;
+	float:left;
+}

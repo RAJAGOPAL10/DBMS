@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN_LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style type="text/css">
+		header{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.main_nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	padding-right: 100px;
+
+}
+
+.main_nav li{
+	display: inline-block;
+}
+
+.main_nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 15px;
+	
+}
+
+.main_nav li:hover a{
+	border: 2px solid white;
+}
+
+.logo img{
+	padding-top: 10px;
+	padding-left: 10px;
+	width:45px;
+	height:auto;
+	float:left;
+}
+
+
+
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ad.png);
+	background-size: cover;
+}
+
+.login_box{
+	width: 350px;
+	height: 350px;
+	background: #000;
+	color: #fff;
+	top: 55%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 50px 30px;
+	border-radius: 20px;
+}
+
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login_box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.login_box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.login_box input[type="email"],input[type="password"],input[type="text"]
+
+{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+}
+
+.register
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login_box input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: limegreen;#fb2525
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login_box input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: black;
+}
+
+.login_box a{
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.login_box a:hover{
+	color: #ffc107;
+}
+	</style>
+</head>
+<body>
+	<div class="row">
+			<div class="logo">
+				<img src="logo.png" >
+			</div>
+			
+			<ul class="main_nav">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+				<li><a href="">CONTACT</a></li>
+				<li><a href="">FAQ</a></li>
+				
+			</ul>
+			
+		</div>
+		<div>
+			<h2>ActiveBuilding</h2>
+		</div>
+		<hr>
+	<div class="login_box">
+		<h1>Admin Login</h1>
+		<form action="admin_login.php" method="POST">
+			<p>Admin Name</p>
+			<input type="text" name="admin_id" placeholder="Enter name">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter password">
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
